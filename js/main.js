@@ -1,5 +1,5 @@
 /* =========================================================================
-   Beulah Divya Kannan — Portfolio interactions
+   Beulah Divya Kannan: Portfolio interactions
    ========================================================================= */
 (() => {
   "use strict";
@@ -14,23 +14,6 @@
   --------------------------------------------------------------------- */
   const yearEl = $("#year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  /* ---------------------------------------------------------------------
-     Rotating hero headline
-  --------------------------------------------------------------------- */
-  const headline = $("#headline");
-  const HEADLINES = window.__HEADLINES__ || [];
-  if (headline && HEADLINES.length > 1 && !prefersReduced) {
-    let hi = 0;
-    setInterval(() => {
-      headline.classList.add("swapping");
-      setTimeout(() => {
-        hi = (hi + 1) % HEADLINES.length;
-        headline.innerHTML = HEADLINES[hi];
-        headline.classList.remove("swapping");
-      }, 450);
-    }, 3800);
-  }
 
   /* ---------------------------------------------------------------------
      Scroll progress bar
@@ -200,21 +183,17 @@
   }
 
   /* ---------------------------------------------------------------------
-     Gallery filter
+     Skills marquee: clone the list once so the loop is seamless
   --------------------------------------------------------------------- */
-  const tabs = $$(".tab");
-  const cards = $$(".case-card");
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
-      const f = tab.dataset.filter;
-      cards.forEach((c) => {
-        const match = f === "all" || (c.dataset.tags || "").includes(f);
-        c.classList.toggle("is-hidden", !match);
-      });
+  const track = $(".marquee-track");
+  if (track) {
+    $$(":scope > *", track).forEach((el) => {
+      const copy = el.cloneNode(true);
+      copy.setAttribute("aria-hidden", "true");
+      track.appendChild(copy);
     });
-  });
+    track.classList.add("is-looping");
+  }
 
   /* ---------------------------------------------------------------------
      Case modal
@@ -249,13 +228,21 @@
             : ""
         }
 
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-7">
+        ${
+          data.image
+            ? `<figure class="mb-7 overflow-hidden rounded-xl border border-white/10">
+                 <img src="${data.image.src}" alt="${data.image.alt || ""}" class="block w-full h-auto" loading="lazy" />
+               </figure>`
+            : ""
+        }
+
+        <div class="grid grid-cols-2 ${data.metrics.length > 2 ? "sm:grid-cols-4" : ""} gap-3 mb-7">
           ${data.metrics
             .map(
               (m) => `
             <div class="panel p-4 text-center">
-              <div class="metric"><span class="num text-2xl sm:text-3xl">${m.v}</span></div>
-              <p class="font-mono text-[10px] mt-2 leading-tight" style="color:var(--muted)">${m.l}</p>
+              <div class="metric"><span class="num ${m.v.length > 6 ? "text-xl sm:text-2xl" : "text-2xl sm:text-3xl"} whitespace-nowrap">${m.v}</span></div>
+              <p class="font-mono text-xs mt-2 leading-snug" style="color:var(--muted)">${m.l}</p>
             </div>`
             )
             .join("")}
@@ -324,25 +311,49 @@
   }
 
   /* ---------------------------------------------------------------------
-     Contact form -> mailto
+     Contact form: sent through Web3Forms, no page reload
   --------------------------------------------------------------------- */
   const form = $("#contact-form");
   if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = $("#cf-name").value.trim();
-      const email = $("#cf-email").value.trim();
-      const message = $("#cf-message").value.trim();
-      const subject = encodeURIComponent(`Portfolio inquiry — ${name || "Hello"}`);
-      const body = encodeURIComponent(
-        `${message}\n\n— ${name}\n${email}`
-      );
-      window.location.href = `mailto:beulahdivya11@gmail.com?subject=${subject}&body=${body}`;
+    const status = $("#cf-status");
+    const button = $("#cf-submit");
+    const label = $("#cf-submit-label");
+    const say = (text, ok = true) => {
+      if (!status) return;
+      status.textContent = text;
+      status.style.color = ok ? "var(--lime)" : "var(--amber)";
+    };
 
-      const status = $("#cf-status");
-      if (status) {
-        status.textContent = "Opening your email client…";
-        setTimeout(() => (status.textContent = ""), 5000);
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      const data = Object.fromEntries(new FormData(form).entries());
+      data.subject = `Portfolio inquiry from ${data.name}`;
+      if (!data.botcheck) delete data.botcheck;
+
+      button.disabled = true;
+      button.style.opacity = "0.6";
+      label.textContent = "Sending";
+      say("");
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify(data),
+        });
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || !out.success) throw new Error(out.message || "Send failed");
+        form.reset();
+        say("Thanks. Your message is on its way.");
+      } catch (err) {
+        say("That did not send. Please email me directly instead.", false);
+      } finally {
+        button.disabled = false;
+        button.style.opacity = "";
+        label.textContent = "Send message";
       }
     });
   }

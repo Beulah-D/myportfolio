@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beulah Kannan · Strategy, Operations &amp; Business Analytics</title>
-  <meta name="description" content="Beulah Kannan is an operations and business analyst who turns ambiguity into structured workflows, clear requirements, and decisions backed by data across healthcare, consumer tech, and technical services." />
+  <title>Beulah Kannan · Operations &amp; Business Analysis</title>
+  <meta name="description" content="Beulah Kannan is an operations and business analyst. She takes work that runs on spreadsheets, memory and habit, and turns it into a process people can follow, across healthcare, technical services and consumer tech." />
   <meta name="author" content="Beulah Kannan" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Beulah Kannan · Strategy, Operations & Business Analytics" />
-  <meta property="og:description" content="Operations and business analyst turning ambiguity into structured workflows, clear requirements, and data-backed decisions." />
+  <meta property="og:title" content="Beulah Kannan · Operations &amp; Business Analysis" />
+  <meta property="og:description" content="Operations and business analyst. I take work that runs on spreadsheets, memory and habit, and turn it into a process people can follow." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +32,7 @@
             surface2: "#161D26",
             text:     "#E6EDF3",
             muted:    "#8B97A7",
-            faint:    "#5A6675",
+            faint:    "#8290A1",
             lime:     "#C6F24E",
             cyan:     "#5EEAD4",
             amber:    "#FFB454",
@@ -46,7 +46,9 @@
     };
   </script>
 
-  <link rel="stylesheet" href="css/styles.css?v=2" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
+  <!-- Without JavaScript the scroll-reveal never fires, so show everything -->
+  <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
 </head>
 
 <body class="font-sans antialiased">
@@ -127,33 +129,32 @@
           </p>
 
           <h1 class="reveal mt-5 text-[2.6rem] leading-[1.05] sm:text-6xl lg:text-[4.3rem] font-bold tracking-tight min-h-[175px] sm:min-h-[205px] lg:min-h-[235px]">
-            <span id="headline" class="headline-rotate">I turn operational <span class="text-gradient">chaos</span> into systems that <span class="hl">scale</span>.</span><span class="caret" aria-hidden="true"></span>
+            <span id="headline">I turn operational <span class="text-gradient">chaos</span> into systems that <span class="hl">scale</span>.</span><span class="caret" aria-hidden="true"></span>
           </h1>
 
           <p class="reveal mt-6 max-w-xl text-base sm:text-lg leading-relaxed" style="color:var(--muted)" data-delay="1">
-            I'm an operations and business analyst, and the messy problems are my favorite: the ones with no clear
-            process, tangled requirements, and decisions stuck waiting on data nobody has pulled yet. I've worked
-            through them in <span class="text-cyan">healthcare</span>, <span class="text-cyan">consumer tech</span>,
-            and <span class="text-cyan">technical services</span>.
+            I'm an operations and business analyst. I take work that runs on spreadsheets, memory and habit, and
+            turn it into a process people can follow. I've done that in <span class="text-cyan">healthcare</span>,
+            <span class="text-cyan">technical services</span> and <span class="text-cyan">consumer tech</span>.
           </p>
 
-          <!-- Metric chips -->
+          <!-- Metric chips. The real numbers are in the HTML; main.js counts up to them. -->
           <div class="reveal mt-8 flex flex-wrap gap-3" data-delay="2">
             <div class="metric panel px-4 py-3 flex items-baseline gap-2">
-              <span class="num text-2xl" data-count="25">0</span><span class="num text-2xl">%</span>
-              <span class="font-mono text-[11px] ml-1" style="color:var(--muted)">turnover&nbsp;↓</span>
+              <span class="whitespace-nowrap"><span class="num text-2xl" data-count="20">20</span><span class="num text-2xl">+</span></span>
+              <span class="font-mono text-xs ml-1" style="color:var(--muted)">hrs/wk of manual work removed</span>
             </div>
             <div class="metric panel px-4 py-3 flex items-baseline gap-2">
-              <span class="num text-2xl" data-count="20">0</span><span class="num text-2xl">+</span>
-              <span class="font-mono text-[11px] ml-1" style="color:var(--muted)">hrs/wk reclaimed</span>
+              <span class="num text-2xl whitespace-nowrap">35% → 51%</span>
+              <span class="font-mono text-xs ml-1" style="color:var(--muted)">modeled room utilization</span>
             </div>
             <div class="metric panel px-4 py-3 flex items-baseline gap-2">
-              <span class="num text-2xl" data-count="20">0</span><span class="num text-2xl">%</span>
-              <span class="font-mono text-[11px] ml-1" style="color:var(--muted)">utilization&nbsp;↑</span>
+              <span class="whitespace-nowrap"><span class="num text-2xl">+</span><span class="num text-2xl" data-count="23">23</span><span class="num text-2xl">%</span></span>
+              <span class="font-mono text-xs ml-1" style="color:var(--muted)">modeled throughput</span>
             </div>
             <div class="metric panel px-4 py-3 flex items-baseline gap-2">
-              <span class="num text-2xl" data-count="4.0">0</span>
-              <span class="font-mono text-[11px] ml-1" style="color:var(--muted)">GPA</span>
+              <span class="num text-2xl" data-count="4.0">4.0</span>
+              <span class="font-mono text-xs ml-1" style="color:var(--muted)">GPA</span>
             </div>
           </div>
 
@@ -208,13 +209,6 @@
                 </div>
               </div>
 
-              <div class="rule"></div>
-
-              <div class="flex items-center gap-2.5">
-                <span class="h-2 w-2 rounded-full bg-lime animate-pulse"></span>
-                <span class="font-mono text-sm" style="color:var(--text)">Available immediately</span>
-              </div>
-
             </div>
           </div>
         </div>
@@ -226,133 +220,130 @@
     <section id="work" class="py-24 sm:py-28">
       <div class="mx-auto max-w-[1200px] px-5 sm:px-8">
 
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
-          <div>
-            <p class="eyebrow reveal">01 · Selected Work</p>
-            <h2 class="reveal mt-3 text-3xl sm:text-5xl font-bold tracking-tight">Outcomes, shipped.</h2>
-            <p class="reveal mt-4 max-w-xl" style="color:var(--muted)" data-delay="1">
-              Six case studies where structured thinking met measurable results. Tap any card for the full breakdown.
-            </p>
-          </div>
-
-          <!-- Filter tabs -->
-          <div class="reveal flex flex-wrap gap-2" data-delay="2" role="tablist" aria-label="Filter projects">
-            <button class="tab active" data-filter="all">all</button>
-            <button class="tab" data-filter="operations">operations</button>
-            <button class="tab" data-filter="analytics">analytics</button>
-            <button class="tab" data-filter="leadership">leadership</button>
-          </div>
+        <div class="mb-10">
+          <p class="eyebrow reveal">01 · Work</p>
+          <h2 class="reveal mt-3 text-3xl sm:text-5xl font-bold tracking-tight">Selected work</h2>
+          <p class="reveal mt-4 max-w-xl" style="color:var(--muted)" data-delay="1">
+            Three projects, start to finish. Click any card for the details.
+          </p>
         </div>
 
-        <!-- Gallery -->
+        <!-- Main cards -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
           <!-- TRITON -->
-          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: ERP implementation at Triton"
-                   data-case="triton" data-tags="operations">
+          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: operating system build at Triton"
+                   data-case="triton">
             <div class="flex items-start justify-between gap-3">
-              <span class="chip">ERP · Process Design</span>
+              <span class="chip">ERP · Process Design · AI Operations</span>
               <svg class="arrow shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
             </div>
             <h3 class="mt-5 text-xl font-semibold tracking-tight">Built the company's operating system</h3>
             <p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">
-              Implemented Odoo ERP from scratch and digitized five core workflows at Triton Technical Services.
+              Implemented Odoo as the company's first central operating system across five core business functions, then built an AI operations agent that gives the CEO a live view of the business.
             </p>
-            <div class="mt-auto pt-6 flex items-baseline gap-5 font-mono text-xs" style="color:var(--faint)">
+            <div class="card-stats mt-auto pt-6 flex flex-wrap items-baseline gap-x-5 gap-y-1 font-mono text-xs">
               <span><span class="text-lime text-base font-bold">5</span> workflows</span>
               <span><span class="text-lime text-base font-bold">20+</span> hrs/wk saved</span>
             </div>
-            <p class="mt-3 font-mono text-[11px]" style="color:var(--faint)">Triton Technical Services · 2026</p>
+            <p class="card-foot mt-3 font-mono text-xs">Triton Technical Services · 2026 to present</p>
           </article>
 
           <!-- LAGMC -->
-          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: IR workflow redesign at LA General"
-                   data-case="lagmc" data-tags="operations analytics" data-delay="1">
+          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: interventional radiology bottleneck analysis at LA General"
+                   data-case="lagmc" data-delay="1">
             <div class="flex items-start justify-between gap-3">
-              <span class="chip">Process Improvement · Workflow Redesign</span>
+              <span class="chip">Process Improvement · Patient Flow</span>
               <svg class="arrow shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold tracking-tight">Redesigned a trauma center's IR workflows</h3>
+            <h3 class="mt-5 text-xl font-semibold tracking-tight">Found the real bottleneck in a trauma center's IR suite</h3>
             <p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">
-              Cut interventional-radiology room turnover 25% at one of the West Coast's busiest Level&nbsp;I trauma centers, freeing room time for more patients. The Chief Quality Officer adopted the changes hospital-wide.
+              Shadowed 11 patients and interviewed 15+ clinicians in interventional radiology. The analysis showed the shared prep and recovery area was the constraint, not the procedure rooms. The Chief Quality Officer championed the recommendations.
             </p>
-            <div class="mt-auto pt-6 flex items-baseline gap-5 font-mono text-xs" style="color:var(--faint)">
-              <span><span class="text-lime text-base font-bold">25%</span> turnover↓</span>
-              <span><span class="text-lime text-base font-bold">20%</span> util↑</span>
+            <div class="card-stats mt-auto pt-6 flex flex-wrap items-baseline gap-x-5 gap-y-1 font-mono text-xs">
+              <span><span class="text-lime text-base font-bold">35% → 51%</span> modeled utilization</span>
+              <span><span class="text-lime text-base font-bold">+23%</span> modeled throughput</span>
             </div>
-            <p class="mt-3 font-mono text-[11px]" style="color:var(--faint)">LA General Medical Center · 2025</p>
+            <p class="card-foot mt-3 font-mono text-xs">LA General Medical Center · 2025</p>
           </article>
 
           <!-- SNAPCHAT -->
-          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: Snapchat customer insights"
-                   data-case="snapchat" data-tags="analytics" data-delay="2">
+          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: Snapchat churn study, USC academic project"
+                   data-case="snapchat" data-delay="2">
             <div class="flex items-start justify-between gap-3">
               <span class="chip">Qualitative &amp; Quantitative Research</span>
               <svg class="arrow shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
             </div>
             <h3 class="mt-5 text-xl font-semibold tracking-tight">Decoded Gen Z churn for Snapchat</h3>
             <p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">
-              Mixed-methods study of 100+ users, clustering them into behavioral personas and mapping monetization levers.
+              Studied why Gen Z and Millennial users leave, using focus groups, interviews and a survey of 100+ people. Grouped users into three behavioral personas and recommended changes to features, AR shopping and subscriptions.
             </p>
-            <div class="mt-auto pt-6 flex items-baseline gap-5 font-mono text-xs" style="color:var(--faint)">
+            <div class="card-stats mt-auto pt-6 flex flex-wrap items-baseline gap-x-5 gap-y-1 font-mono text-xs">
               <span><span class="text-lime text-base font-bold">100+</span> respondents</span>
               <span><span class="text-lime text-base font-bold">3</span> personas</span>
             </div>
-            <p class="mt-3 font-mono text-[11px]" style="color:var(--faint)">USC · Academic · 2025</p>
+            <p class="card-foot mt-3 font-mono text-xs">USC · Academic project · 2025</p>
           </article>
 
+        </div>
+
+        <!-- Earlier work (smaller row) -->
+        <h3 class="reveal mt-14 mb-5 font-mono text-sm uppercase tracking-[0.22em]" style="color:var(--muted)">Earlier work</h3>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
           <!-- READMISSION -->
-          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: patient readmission model"
-                   data-case="readmission" data-tags="analytics">
+          <article class="case-card case-card-sm reveal p-5 flex flex-col" tabindex="0" role="button" aria-label="Open case: patient readmission model"
+                   data-case="readmission">
             <div class="flex items-start justify-between gap-3">
               <span class="chip">Predictive Modeling · GCP</span>
-              <svg class="arrow shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
+              <svg class="arrow shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold tracking-tight">Predicted 30-day hospital readmissions</h3>
-            <p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">
+            <h4 class="mt-4 text-base font-semibold tracking-tight">Predicted 30-day hospital readmissions</h4>
+            <p class="mt-1.5 text-[13px] leading-relaxed" style="color:var(--muted)">
               An automated XGBoost pipeline on a 10.6K-row dataset, lifting F1 by 22% over a logistic-regression baseline.
             </p>
-            <div class="mt-auto pt-6 flex items-baseline gap-5 font-mono text-xs" style="color:var(--faint)">
-              <span><span class="text-lime text-base font-bold">+22%</span> F1</span>
-              <span><span class="text-lime text-base font-bold">10.6K</span> rows</span>
+            <div class="card-stats mt-auto pt-4 flex flex-wrap items-baseline gap-x-5 gap-y-1 font-mono text-xs">
+              <span><span class="text-lime text-sm font-bold">+22%</span> F1</span>
+              <span><span class="text-lime text-sm font-bold">10.6K</span> rows</span>
             </div>
-            <p class="mt-3 font-mono text-[11px]" style="color:var(--faint)">Healthcare Analytics · 2024</p>
+            <p class="card-foot mt-2 font-mono text-xs">Healthcare Analytics · 2024</p>
           </article>
 
           <!-- WORKUP -->
-          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: video recommendation system"
-                   data-case="workup" data-tags="analytics" data-delay="1">
+          <article class="case-card case-card-sm reveal p-5 flex flex-col" tabindex="0" role="button" aria-label="Open case: video recommendation system"
+                   data-case="workup" data-delay="1">
             <div class="flex items-start justify-between gap-3">
               <span class="chip">Data Pipeline · Modeling</span>
-              <svg class="arrow shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
+              <svg class="arrow shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold tracking-tight">Engineered a video recommender</h3>
-            <p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">
+            <h4 class="mt-4 text-base font-semibold tracking-tight">Engineered a video recommender</h4>
+            <p class="mt-1.5 text-[13px] leading-relaxed" style="color:var(--muted)">
               Built the data pipeline and model architecture for a content recommendation system at Workup.
             </p>
-            <div class="mt-auto pt-6 flex items-baseline gap-5 font-mono text-xs" style="color:var(--faint)">
-              <span><span class="text-lime text-base font-bold">ETL</span> pipeline</span>
-              <span><span class="text-lime text-base font-bold">↑</span> accuracy</span>
+            <div class="card-stats mt-auto pt-4 flex flex-wrap items-baseline gap-x-5 gap-y-1 font-mono text-xs">
+              <span><span class="text-lime text-sm font-bold">ETL</span> pipeline</span>
+              <span><span class="text-lime text-sm font-bold">↑</span> accuracy</span>
             </div>
-            <p class="mt-3 font-mono text-[11px]" style="color:var(--faint)">Workup · 2024</p>
+            <p class="card-foot mt-2 font-mono text-xs">Workup · 2024</p>
           </article>
 
           <!-- VITERBI -->
-          <article class="case-card reveal p-6 flex flex-col" tabindex="0" role="button" aria-label="Open case: Viterbi career ambassador"
-                   data-case="viterbi" data-tags="leadership" data-delay="2">
+          <article class="case-card case-card-sm reveal p-5 flex flex-col" tabindex="0" role="button" aria-label="Open case: Viterbi career ambassador"
+                   data-case="viterbi" data-delay="2">
             <div class="flex items-start justify-between gap-3">
               <span class="chip">Program &amp; Event Ops</span>
-              <svg class="arrow shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
+              <svg class="arrow shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lime)" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7m0 0H8m9 0v9"/></svg>
             </div>
-            <h3 class="mt-5 text-xl font-semibold tracking-tight">Mentored engineers, ran the events</h3>
-            <p class="mt-2 text-sm leading-relaxed" style="color:var(--muted)">
+            <h4 class="mt-4 text-base font-semibold tracking-tight">Mentored engineers, ran the events</h4>
+            <p class="mt-1.5 text-[13px] leading-relaxed" style="color:var(--muted)">
               Guided 20+ peers and powered logistics for USC Viterbi's signature career EXPOs and employer events.
             </p>
-            <div class="mt-auto pt-6 flex items-baseline gap-5 font-mono text-xs" style="color:var(--faint)">
-              <span><span class="text-lime text-base font-bold">20+</span> mentored</span>
-              <span><span class="text-lime text-base font-bold">EXPO</span> ops</span>
+            <div class="card-stats mt-auto pt-4 flex flex-wrap items-baseline gap-x-5 gap-y-1 font-mono text-xs">
+              <span><span class="text-lime text-sm font-bold">20+</span> mentored</span>
+              <span><span class="text-lime text-sm font-bold">EXPO</span> ops</span>
             </div>
-            <p class="mt-3 font-mono text-[11px]" style="color:var(--faint)">USC Viterbi · 2024 to 2025</p>
+            <p class="card-foot mt-2 font-mono text-xs">USC Viterbi · 2024 to 2025</p>
           </article>
 
         </div>
@@ -364,26 +355,24 @@
       <div class="mx-auto max-w-[1200px] px-5 sm:px-8 grid lg:grid-cols-[1fr_0.8fr] gap-12 lg:gap-16">
 
         <div>
-          <p class="eyebrow reveal">02 · About</p>
-          <h2 class="reveal mt-3 text-3xl sm:text-5xl font-bold tracking-tight leading-tight">
-            I live where <span class="text-gradient">messy operations</span> meet clean data.
-          </h2>
+          <p class="eyebrow reveal">02 · Profile</p>
+          <h2 class="reveal mt-3 text-3xl sm:text-5xl font-bold tracking-tight leading-tight">About</h2>
           <div class="reveal mt-6 space-y-4 text-base sm:text-lg leading-relaxed max-w-2xl" style="color:var(--muted)" data-delay="1">
             <p>
               I'm a strategy and operations analyst with a Master's in Analytics from the University of Southern
-              California. My favorite problems start
-              as undefined chaos. A tangle of manual spreadsheets, undocumented handoffs, or a process nobody has mapped.
-              I turn them into systems that run without me.
+              California.
             </p>
             <p>
-              I've done that inside a Level&nbsp;I trauma center's radiology division, on the floor of a technical-services
-              firm building its ERP from zero, and across consumer-tech research. What stays constant is simple. I talk to
-              the people doing the work, find where time leaks out, and back every recommendation with numbers.
+              At Triton Technical Services I led the rollout of the company's first operating system and redesigned
+              how timesheets and invoices move through it. Before that, at LA General Medical Center, I was part of a
+              four-person team that studied patient flow in interventional radiology and took its recommendations to
+              hospital leadership.
             </p>
             <p>
-              I'm fluent across the tools that make that possible, from <span class="text-cyan">SQL and Tableau</span> to
-              <span class="text-cyan">process mapping and requirements gathering</span>. But the real skill is translation:
-              turning what stakeholders, operators, and leadership say into workflows and roadmaps they will actually adopt.
+              My approach is the same each time. I talk to the people doing the work, map what happens today, find
+              where time is lost, and back each recommendation with numbers. I use
+              <span class="text-cyan">SQL, Python and Tableau</span> for the analysis. Most of the job is getting
+              people to agree on a better way of working and then making it stick.
             </p>
           </div>
 
@@ -392,7 +381,6 @@
             <span class="chip">Requirements Gathering</span>
             <span class="chip">ERP Implementation</span>
             <span class="chip">Stakeholder Management</span>
-            <span class="chip">Data Storytelling</span>
           </div>
         </div>
 
@@ -417,15 +405,15 @@
               </div>
               <div class="py-3.5">
                 <dt class="card-label">Domains</dt>
-                <dd class="mt-1.5" style="color:var(--text)">Healthcare · Consumer Tech · Technical Services</dd>
+                <dd class="mt-1.5" style="color:var(--text)">Healthcare · Technical Services · Consumer Tech</dd>
               </div>
               <div class="py-3.5">
                 <dt class="card-label">Location</dt>
-                <dd class="mt-1.5" style="color:var(--text)">Los Angeles, CA · open to relocation</dd>
+                <dd class="mt-1.5" style="color:var(--text)">Los Angeles, CA · open to relocation (US, Europe, Middle East)</dd>
               </div>
               <div class="py-3.5 last:pb-0">
                 <dt class="card-label">Status</dt>
-                <dd class="mt-1.5 flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-lime animate-pulse"></span><span class="text-lime">Open to new opportunities</span></dd>
+                <dd class="mt-1.5 flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-lime animate-pulse"></span><span class="text-lime">Open to new roles</span></dd>
               </div>
             </dl>
           </div>
@@ -438,22 +426,38 @@
     <section id="skills" class="py-24 sm:py-28">
       <div class="mx-auto max-w-[1200px] px-5 sm:px-8">
         <p class="eyebrow reveal">03 · Toolkit</p>
-        <h2 class="reveal mt-3 text-3xl sm:text-5xl font-bold tracking-tight">The stack behind the work.</h2>
+        <h2 class="reveal mt-3 text-3xl sm:text-5xl font-bold tracking-tight">Skills</h2>
 
         <div class="mt-12 grid md:grid-cols-3 gap-5">
-          <!-- Business & Systems Analysis -->
+          <!-- Operations & Program Management -->
           <div class="panel reveal p-6">
             <div class="flex items-center gap-3 mb-5">
               <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-lime/10 text-lime border border-lime/20">01</span>
+              <h3 class="font-semibold tracking-tight">Operations &amp; Program Management</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip chip-wrap">Process Improvement (Lean Six Sigma methods)</span>
+              <span class="chip">Project &amp; Program Management</span>
+              <span class="chip">Roadmapping &amp; Planning</span>
+              <span class="chip">Risk &amp; Dependency Management</span>
+              <span class="chip">Stakeholder Management</span>
+              <span class="chip">Cross-functional Leadership</span>
+              <span class="chip">Change Management</span>
+              <span class="chip">Voice of Customer</span>
+            </div>
+          </div>
+
+          <!-- Business & Systems Analysis -->
+          <div class="panel reveal p-6" data-delay="1">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-cyan/10 text-cyan border border-cyan/20">02</span>
               <h3 class="font-semibold tracking-tight">Business &amp; Systems Analysis</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <span class="chip">Requirements Gathering</span>
-              <span class="chip">User Stories / BRD &amp; FRD</span>
-              <span class="chip">Process Mapping</span>
-              <span class="chip">Workflow Design</span>
-              <span class="chip">Gap Analysis</span>
+              <span class="chip chip-wrap">Process Mapping &amp; Workflow Design</span>
               <span class="chip">SOPs &amp; Playbooks</span>
+              <span class="chip">Gap Analysis</span>
               <span class="chip">ERP Implementation (Odoo)</span>
               <span class="chip">UAT</span>
               <span class="chip">Agile / Scrum</span>
@@ -461,51 +465,27 @@
           </div>
 
           <!-- Data & Analytics -->
-          <div class="panel reveal p-6" data-delay="1">
+          <div class="panel reveal p-6" data-delay="2">
             <div class="flex items-center gap-3 mb-5">
-              <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-cyan/10 text-cyan border border-cyan/20">02</span>
+              <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-amber/10 text-amber border border-amber/20">03</span>
               <h3 class="font-semibold tracking-tight">Data &amp; Analytics</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <span class="chip">SQL</span>
-              <span class="chip">Python · Pandas</span>
+              <span class="chip">Python</span>
               <span class="chip">Advanced Excel</span>
               <span class="chip">Tableau</span>
-              <span class="chip">KPI Dashboards &amp; Reporting</span>
-              <span class="chip">Data Storytelling</span>
+              <span class="chip">KPI Dashboards</span>
               <span class="chip">Snowflake</span>
               <span class="chip">Forecasting</span>
-              <span class="chip">A/B Testing</span>
-              <span class="chip">Predictive Modeling</span>
-            </div>
-          </div>
-
-          <!-- Operations & Program Management -->
-          <div class="panel reveal p-6" data-delay="2">
-            <div class="flex items-center gap-3 mb-5">
-              <span class="font-mono text-xs px-2.5 py-1 rounded-md bg-amber/10 text-amber border border-amber/20">03</span>
-              <h3 class="font-semibold tracking-tight">Operations &amp; Program Management</h3>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="chip">Process Improvement</span>
-              <span class="chip">Project &amp; Program Management</span>
-              <span class="chip">Roadmapping &amp; Planning</span>
-              <span class="chip">Risk Management</span>
-              <span class="chip">Stakeholder Management</span>
-              <span class="chip">Cross-functional Leadership</span>
-              <span class="chip">Change Management</span>
-              <span class="chip">Voice of Customer</span>
-              <span class="chip">Market Research</span>
             </div>
           </div>
         </div>
 
-        <!-- Marquee ticker -->
+        <!-- Marquee ticker. One copy of the list lives here; main.js clones it for the seamless loop. -->
         <div class="reveal mt-10 marquee py-4 border-y border-white/5" data-delay="1">
           <div class="marquee-track font-mono text-sm" style="color:var(--faint)">
-            <span>SQL</span><span class="text-lime">/</span><span>Tableau</span><span class="text-lime">/</span><span>KPI Dashboards</span><span class="text-lime">/</span><span>Agile · Scrum</span><span class="text-lime">/</span><span>Requirements Gathering</span><span class="text-lime">/</span><span>User Stories</span><span class="text-lime">/</span><span>Process Mapping</span><span class="text-lime">/</span><span>Roadmapping</span><span class="text-lime">/</span><span>Stakeholder Management</span><span class="text-lime">/</span><span>Risk Management</span><span class="text-lime">/</span><span>Project &amp; Program Mgmt</span><span class="text-lime">/</span><span>ERP (Odoo)</span><span class="text-lime">/</span><span>Process Improvement</span><span class="text-lime">/</span>
-            <!-- duplicate for seamless loop -->
-            <span>SQL</span><span class="text-lime">/</span><span>Tableau</span><span class="text-lime">/</span><span>KPI Dashboards</span><span class="text-lime">/</span><span>Agile · Scrum</span><span class="text-lime">/</span><span>Requirements Gathering</span><span class="text-lime">/</span><span>User Stories</span><span class="text-lime">/</span><span>Process Mapping</span><span class="text-lime">/</span><span>Roadmapping</span><span class="text-lime">/</span><span>Stakeholder Management</span><span class="text-lime">/</span><span>Risk Management</span><span class="text-lime">/</span><span>Project &amp; Program Mgmt</span><span class="text-lime">/</span><span>ERP (Odoo)</span><span class="text-lime">/</span><span>Process Improvement</span><span class="text-lime">/</span>
+            <span>Process Improvement</span><span class="text-lime">/</span><span>Project &amp; Program Mgmt</span><span class="text-lime">/</span><span>Roadmapping</span><span class="text-lime">/</span><span>Risk &amp; Dependency Mgmt</span><span class="text-lime">/</span><span>Stakeholder Management</span><span class="text-lime">/</span><span>Change Management</span><span class="text-lime">/</span><span>Requirements Gathering</span><span class="text-lime">/</span><span>Process Mapping</span><span class="text-lime">/</span><span>SOPs &amp; Playbooks</span><span class="text-lime">/</span><span>ERP (Odoo)</span><span class="text-lime">/</span><span>Agile · Scrum</span><span class="text-lime">/</span><span>SQL</span><span class="text-lime">/</span><span>Python</span><span class="text-lime">/</span><span>Tableau</span><span class="text-lime">/</span><span>KPI Dashboards</span><span class="text-lime">/</span>
           </div>
         </div>
       </div>
@@ -524,7 +504,6 @@
 
           <!-- Natalie Ring -->
           <figure class="bubble reveal p-6">
-            <div class="font-mono text-xs text-lime mb-3">★★★★★</div>
             <blockquote class="text-[15px] leading-relaxed" style="color:var(--text)">
               "Beulah's ability to work at the intersection of analytics and clinical operations is exceptional. She combines
               technical mastery of Python, SQL, and Tableau with the communication skills to collaborate with clinicians and
@@ -536,14 +515,13 @@
               <span class="avatar" style="background:linear-gradient(135deg,var(--lime),var(--cyan))">NR</span>
               <span>
                 <span class="block text-sm font-semibold">Natalie Ring, MD</span>
-                <span class="block font-mono text-[11px]" style="color:var(--muted)">Interventional Radiology · LA General Medical Center</span>
+                <span class="block font-mono text-xs" style="color:var(--muted)">Interventional Radiology · LA General Medical Center</span>
               </span>
             </figcaption>
           </figure>
 
           <!-- Hemanth -->
           <figure class="bubble reveal p-6" data-delay="1">
-            <div class="font-mono text-xs text-lime mb-3">★★★★★</div>
             <blockquote class="text-[15px] leading-relaxed" style="color:var(--text)">
               "Her performance was exceptional. Beulah expertly handled complex datasets, played a key role in creating an
               efficient ETL pipeline, and contributed significantly to our model architecture. Through synthetic
@@ -554,14 +532,13 @@
               <span class="avatar" style="background:linear-gradient(135deg,var(--cyan),var(--amber))">HS</span>
               <span>
                 <span class="block text-sm font-semibold">Hemanth Sammatur</span>
-                <span class="block font-mono text-[11px]" style="color:var(--muted)">Project Lead · Workup</span>
+                <span class="block font-mono text-xs" style="color:var(--muted)">Project Lead · Workup</span>
               </span>
             </figcaption>
           </figure>
 
           <!-- Selina -->
           <figure class="bubble reveal p-6" data-delay="2">
-            <div class="font-mono text-xs text-lime mb-3">★★★★★</div>
             <blockquote class="text-[15px] leading-relaxed" style="color:var(--text)">
               "Beulah was consistently reliable, proactive, and often the first to volunteer, staying late when extra support
               was required and bringing a solutions-oriented approach to her work. Her professionalism and teamwork made her
@@ -572,7 +549,7 @@
               <span class="avatar" style="background:linear-gradient(135deg,var(--amber),var(--lime))">SD</span>
               <span>
                 <span class="block text-sm font-semibold">Selina DerSarkissian</span>
-                <span class="block font-mono text-[11px]" style="color:var(--muted)">Supervisor · USC Viterbi Career Connections</span>
+                <span class="block font-mono text-xs" style="color:var(--muted)">Supervisor · USC Viterbi Career Connections</span>
               </span>
             </figcaption>
           </figure>
@@ -592,39 +569,28 @@
           national parks has quietly turned into a hobby.
         </p>
 
-        <div class="reveal mt-10 columns-2 lg:columns-3 gap-4 [&>*]:mb-4" data-delay="1">
-          <figure class="nature-tile reveal">
-            <img src="assets/nature/IMG_1083.jpg" alt="Half Dome viewed from Glacier Point, Yosemite National Park" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Glacier Point · Yosemite</figcaption>
-          </figure>
-          <figure class="nature-tile reveal" data-delay="1">
-            <img src="assets/nature/IMG_6067.jpg" alt="Towering giant sequoia trees in Sequoia National Park" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Giant Forest · Sequoia</figcaption>
-          </figure>
-          <figure class="nature-tile reveal" data-delay="2">
-            <img src="assets/nature/IMG_0978.jpg" alt="Snow-rimmed alpine lake at Ellery Lake near Tioga Pass" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Ellery Lake · Tioga Pass</figcaption>
-          </figure>
-          <figure class="nature-tile reveal">
-            <img src="assets/nature/IMG_1049.jpg" alt="Beulah at Tunnel View overlooking Yosemite Valley" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Tunnel View · Yosemite</figcaption>
-          </figure>
-          <figure class="nature-tile reveal" data-delay="2">
-            <img src="assets/nature/IMG_0983.jpg" alt="Highway 120 climbing toward snowy peaks at Tioga Pass" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Highway 120 · Tioga Pass</figcaption>
-          </figure>
-          <figure class="nature-tile reveal">
-            <img src="assets/nature/IMG_1347.jpg" alt="Eroded badlands at Zabriskie Point, Death Valley, at dawn" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Zabriskie Point · Death Valley</figcaption>
-          </figure>
-          <figure class="nature-tile reveal" data-delay="2">
-            <img src="assets/nature/IMG_3839.jpg" alt="Stargazing under a star-filled desert night sky with a telescope and Joshua trees in silhouette" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Stargazing · Joshua Tree</figcaption>
-          </figure>
-          <figure class="nature-tile reveal" data-delay="1">
-            <img src="assets/nature/IMG_1207.jpg" alt="Snow-capped Eastern Sierra peaks at dusk along US-395" loading="lazy" />
-            <figcaption><span class="text-lime">◍</span> Eastern Sierra · US-395</figcaption>
-          </figure>
+        <!-- Two rows. Flex values follow each photo's aspect ratio so a row's photos share one height. -->
+        <div class="mt-10 space-y-3 sm:space-y-4">
+          <div class="flex gap-3 sm:gap-4">
+            <figure class="nature-tile reveal" style="flex:16 1 0">
+              <img src="assets/nature/IMG_1049.jpg" alt="Beulah at Tunnel View overlooking Yosemite Valley" width="1600" height="1200" loading="lazy" />
+              <figcaption><span class="text-lime">◍</span> Tunnel View · Yosemite</figcaption>
+            </figure>
+            <figure class="nature-tile reveal" style="flex:9 1 0" data-delay="1">
+              <img src="assets/nature/IMG_6067.jpg" alt="Towering giant sequoia trees in Sequoia National Park" width="1200" height="1600" loading="lazy" />
+              <figcaption><span class="text-lime">◍</span> Giant Forest · Sequoia</figcaption>
+            </figure>
+          </div>
+          <div class="flex gap-3 sm:gap-4">
+            <figure class="nature-tile reveal" style="flex:1 1 0">
+              <img src="assets/nature/IMG_1083.jpg" alt="Half Dome viewed from Glacier Point, Yosemite National Park" width="1600" height="1200" loading="lazy" />
+              <figcaption><span class="text-lime">◍</span> Glacier Point · Yosemite</figcaption>
+            </figure>
+            <figure class="nature-tile reveal" style="flex:1 1 0" data-delay="1">
+              <img src="assets/nature/IMG_1207.jpg" alt="Snow-capped Eastern Sierra peaks at dusk along US-395" width="1600" height="1200" loading="lazy" />
+              <figcaption><span class="text-lime">◍</span> Eastern Sierra · US-395</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -652,12 +618,9 @@
                 just not scaling yet. That's the kind of problem I like to dig into.
               </p>
 
-              <div class="reveal mt-8 space-y-3 font-mono text-sm" data-delay="2">
-                <a href="mailto:beulahdivya11@gmail.com" class="group flex items-center gap-3 hover:text-lime transition" style="color:var(--text)">
+              <div class="reveal mt-8 font-mono text-sm" data-delay="2">
+                <a href="mailto:beulahdivya11@gmail.com" class="group flex items-center gap-3 hover:text-lime transition break-all" style="color:var(--text)">
                   <span class="text-lime">→</span> beulahdivya11@gmail.com
-                </a>
-                <a href="tel:+12137567160" class="group flex items-center gap-3 hover:text-lime transition" style="color:var(--text)">
-                  <span class="text-lime">→</span> +1 (213) 756-7160
                 </a>
               </div>
 
@@ -668,9 +631,15 @@
               </div>
             </div>
 
-            <!-- Right: form -->
+            <!-- Right: form, delivered by Web3Forms (https://web3forms.com) -->
             <div class="p-8 sm:p-12">
-              <form id="contact-form" class="space-y-5" novalidate>
+              <form id="contact-form" class="space-y-5" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms access key. It is safe to publish: it can only send mail to Beulah's inbox. -->
+                <input type="hidden" name="access_key" value="3e1adb28-c8b8-4da6-8307-aaba60e846ff" />
+                <input type="hidden" name="from_name" value="beulahkannan.com contact form" />
+                <!-- Honeypot: bots tick this, people never see it -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
+
                 <div class="reveal">
                   <label for="cf-name" class="card-label block mb-2">Your name</label>
                   <input id="cf-name" name="name" type="text" required autocomplete="name"
@@ -687,16 +656,16 @@
                   <label for="cf-message" class="card-label block mb-2">Message</label>
                   <textarea id="cf-message" name="message" rows="4" required
                             class="w-full bg-ink border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-lime/50 focus:outline-none transition resize-none placeholder:text-faint"
-                            placeholder="We're hiring a Business Analyst and your IR turnover story caught my eye…"></textarea>
+                            placeholder="We're hiring a Business Analyst and would like to talk."></textarea>
                 </div>
-                <div class="reveal flex items-center gap-4" data-delay="3">
-                  <button type="submit" class="btn btn-primary" data-magnetic="0.25">
-                    Send message
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                <div class="reveal flex flex-wrap items-center gap-4" data-delay="3">
+                  <button id="cf-submit" type="submit" class="btn btn-primary" data-magnetic="0.25">
+                    <span id="cf-submit-label">Send message</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                   </button>
                   <span id="cf-status" class="font-mono text-xs text-lime" role="status" aria-live="polite"></span>
                 </div>
-                <p class="font-mono text-[11px]" style="color:var(--faint)">Opens your email client. No data is stored.</p>
+                <p class="font-mono text-xs" style="color:var(--faint)">Your message goes straight to my inbox.</p>
               </form>
             </div>
           </div>
@@ -727,68 +696,60 @@
     <div id="modal-panel" class="modal-panel console"></div>
   </div>
 
-  <!-- Rotating hero headlines -->
-  <script>
-    window.__HEADLINES__ = [
-      'I turn operational <span class="text-gradient">chaos</span> into systems that <span class="hl">scale</span>.',
-      'I turn cross-functional <span class="text-gradient">friction</span> into aligned <span class="hl">execution</span>.',
-      'I turn raw <span class="text-gradient">data</span> into decisions people <span class="hl">trust</span>.'
-    ];
-  </script>
-
   <!-- Case data for the modal -->
   <script>
     window.__CASES__ = {
       triton: {
-        org: "Triton Technical Services", period: "Jan 2026 to Present", role: "Business Analyst",
-        title: "Building the company's operating system",
+        org: "Triton Technical Services", period: "Jan 2026 to present", role: "Business Analyst",
+        title: "Building a services company's first operating system",
+        summary: "Triton ran on spreadsheets and manual handoffs. I led the move to one central system, redesigned the workflows around it, and wrote the playbooks so the work is repeatable.",
         metrics: [
-          { v: "5", l: "core workflows digitized" },
-          { v: "20+", l: "hrs/week of manual work removed" },
-          { v: "1", l: "company website launched" },
-          { v: "100%", l: "from scratch" },
+          { v: "5", l: "core business functions standardized" },
+          { v: "20+", l: "hours of manual work removed per week" },
         ],
         points: [
-          "Led the end-to-end implementation of an Odoo ERP system, configuring it from scratch and digitizing five core business workflows (invoicing, timesheets, expense tracking, project documentation, and internal communication) to replace manual tracking.",
-          "Redesigned the timesheet and invoicing workflows inside the ERP, eliminating 20+ hours of manual administrative work per week while improving billing accuracy and project-based revenue visibility.",
-          "Authored process playbooks and SOPs to standardize recurring workflows and smooth cross-functional handoffs.",
-          "Built the company's first website to centralize service information and customer-facing communication.",
+          "Led the implementation of the company's first centralized operating system (Odoo), defining requirements with leadership, redesigning workflows and standardizing operations across 5 core business functions.",
+          "Redesigned timesheet and invoicing workflows, eliminating 20+ hours of manual work per week while improving billing accuracy and project-level revenue visibility.",
+          "Built an AI-enabled operations agent using Hermes that consolidates data from multiple business systems into a single source of truth and gives the CEO mobile access to company health, project activity and operational insights.",
+          "Developed executive dashboards and operating metrics so the CEO can track business performance, prioritize initiatives and spot operational risks.",
+          "Created SOPs, process playbooks and operating standards from the ground up, with clearer handoffs between teams.",
         ],
-        stack: ["Odoo ERP", "Requirements Gathering", "Process Design", "SOPs", "Workflow Redesign", "Web"],
+        stack: ["ERP Implementation (Odoo)", "Workflow Design", "AI Operations", "Executive Dashboards", "SOPs & Playbooks", "Requirements Gathering"],
       },
       lagmc: {
         org: "Los Angeles General Medical Center", period: "May 2025 to Sept 2025", role: "Strategy & Operations Analyst",
-        title: "Redesigning interventional-radiology workflows",
-        summary: "A summer project that turned into hospital policy. By finding exactly where interventional-radiology room time was leaking, the team freed up capacity for more patients on the same staff and equipment, and the Chief Quality Officer adopted the changes for hospital-wide rollout.",
+        title: "Finding the bottleneck in interventional radiology",
+        summary: "Procedure rooms in interventional radiology sat idle between cases, and everyone assumed the rooms were the problem. A four-person team studied the patient flow end to end and found the constraint was somewhere else.",
+        // Image slot (process map or utilization chart). Shown under the summary once Beulah supplies a file:
+        // image: { src: "assets/lagmc-figure.png", alt: "Describe the figure here" },
         metrics: [
-          { v: "25%", l: "IR room turnover reduction" },
-          { v: "20%", l: "projected utilization increase" },
-          { v: "15+", l: "physician interviews" },
-          { v: "8+", l: "operational metrics tracked" },
+          { v: "35% → 51%", l: "modeled room utilization" },
+          { v: "+23%", l: "modeled throughput" },
+          { v: "15+", l: "clinician interviews" },
+          { v: "11", l: "patients shadowed" },
         ],
         points: [
-          "Spearheaded and organized a cross-functional project team, coordinating with physicians and technologists to redesign inpatient and outpatient workflows at one of the West Coast's busiest Level I trauma centers.",
-          "Conducted 15+ physician interviews (Voice of Customer) to identify operational inefficiencies, implementing process improvements that reduced IR room turnover time by 25% and improved throughput and resource utilization.",
-          "Designed and deployed Tableau dashboards tracking 8+ operational and performance metrics (idle time, procedural delays, equipment utilization), enabling leadership to make data-driven decisions.",
-          "Modeled capacity and staffing scenarios to test process changes, driving a projected 20% utilization increase that was adopted by the Chief Quality Officer for hospital-wide implementation.",
+          "Applied Lean Six Sigma tools (Voice of Customer, process mapping, bottleneck analysis) on a four-person team studying patient flow in interventional radiology at LA County's safety-net hospital.",
+          "Shadowed 11 patients and interviewed 15+ physicians, nurses and technologists. Merged nurse logs, technologist logs and hospital records into one clean dataset in Python.",
+          "Co-built a simulation showing the shared prep and recovery area, not the procedure rooms, was the bottleneck. Splitting it and adjusting staffing modeled 23% higher throughput and utilization up from 35% to 51%.",
+          "Built a Tableau dashboard tracking idle time, procedural delays and equipment use.",
+          "Presented to hospital leadership, including the Chief Quality Officer, who championed the recommendations.",
         ],
-        stack: ["Process Improvement", "Workflow Redesign", "Tableau Dashboards", "Capacity Planning", "Voice of Customer", "Stakeholder Management"],
+        stack: ["Process Improvement", "Lean Six Sigma methods", "Voice of Customer", "Process Mapping", "Tableau Dashboards", "Capacity Planning"],
       },
       snapchat: {
-        org: "USC · Academic", period: "Dec 2025", role: "Customer Insights & Monetization (Snapchat)",
-        title: "Decoding Gen Z and Millennial churn",
+        org: "USC · Academic project", period: "2025", role: "Customer Insights & Monetization, USC academic project",
+        title: "Why Gen Z and Millennial users churn",
         metrics: [
           { v: "100+", l: "survey respondents" },
-          { v: "3", l: "behavioral personas built" },
-          { v: "CLV↑", l: "projected lifetime value lift" },
-          { v: "Qual+Quant", l: "research methods" },
+          { v: "3", l: "behavioral personas" },
         ],
         points: [
-          "Conducted focus groups, interviews, and survey research with 100+ respondents to analyze Gen Z and Millennial usage patterns, uncovering customer needs, churn drivers, loyalty motivators, and feature-adoption trends.",
-          "Applied cluster analysis, regression modeling, customer-journey mapping, and A/B testing in Python to segment users into behavioral personas (Streak Keepers, Filter Fans, Casual Chatters) and identify high-friction churn points.",
-          "Delivered data-driven recommendations on feature design, AR shopping, and subscription models, projected to increase customer lifetime value (CLV) and align monetization with user needs.",
+          "Ran a qualitative and quantitative study (focus groups, interviews and a 100+ respondent survey) into Gen Z and Millennial churn.",
+          "Segmented users into 3 behavioral personas to pinpoint churn drivers and loyalty motivators.",
+          "Delivered recommendations across feature design, AR shopping and subscription models.",
         ],
-        stack: ["Qualitative Research", "Quantitative Analysis", "Customer Segmentation", "A/B Testing", "Python", "Survey Design"],
+        stack: ["Qualitative Research", "Quantitative Research", "Focus Groups", "Survey Design", "Customer Segmentation"],
         link: "https://github.com/Beulah-D/From-Streaks-to-Strategy-A-Mixed-Method-Study-on-Snapchat-Retention",
       },
       readmission: {
@@ -842,6 +803,6 @@
       },
     };
   </script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

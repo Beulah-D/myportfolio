@@ -1,0 +1,7 @@
+# macOS metadata files (the external drive creates a ._ twin for every file)
+._*
+.DS_Store
+
+# Local working files that are not part of the website
+_review/
+.claude/

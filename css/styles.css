@@ -1,6 +1,6 @@
 /* =========================================================================
-   Beulah Divya Kannan — Portfolio
-   Theme: "Ops Console" — dark, data-driven operations dashboard
+   Beulah Divya Kannan: Portfolio
+   Theme: "Ops Console": dark, data-driven operations dashboard
    Custom CSS layered on top of Tailwind (Play CDN).
    ========================================================================= */
 
@@ -13,7 +13,7 @@
   --line-soft:  rgba(255, 255, 255, 0.07);
   --text:       #E6EDF3;   /* primary text */
   --muted:      #8B97A7;   /* secondary text */
-  --faint:      #5A6675;   /* tertiary / labels */
+  --faint:      #8290A1;   /* tertiary / labels (AA contrast on --surface) */
 
   --lime:       #C6F24E;   /* primary accent */
   --cyan:       #5EEAD4;   /* secondary accent */
@@ -146,15 +146,9 @@ body {
 }
 .accent-underline.is-visible { background-size: 100% 2px; }
 
-/* Rotating headline */
-.headline-rotate {
-  display: inline;
-  transition: opacity 0.45s ease, transform 0.45s ease;
-}
-.headline-rotate.swapping { opacity: 0; transform: translateY(10px); }
 .hl { color: var(--lime); }
 
-/* Accent chip — used for target-role bubbles.
+/* Accent chip: used for target-role bubbles.
    Uses .chip.chip-accent so it always beats the base .chip rule regardless of source order. */
 .chip.chip-accent {
   color: var(--lime);
@@ -171,10 +165,10 @@ body {
 /* Small label inside cards */
 .card-label {
   font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.24em;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--faint);
+  color: var(--muted);
 }
 
 /* Blinking terminal caret */
@@ -225,16 +219,18 @@ body {
 
 .chip {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
   padding: 6px 11px;
   border-radius: 99px;
   border: 1px solid var(--line-soft);
-  color: var(--muted);
+  color: #A3AEBD;
   background: rgba(255,255,255,0.02);
   transition: all 0.25s ease;
   white-space: nowrap;
 }
+/* Long chip labels may wrap instead of overflowing a narrow column */
+.chip.chip-wrap { white-space: normal; line-height: 1.35; border-radius: 14px; }
 .chip:hover {
   color: var(--lime);
   border-color: var(--line);
@@ -287,33 +283,12 @@ body {
 }
 .case-card:hover .arrow { transform: translate(4px, -4px); }
 
-.case-card.is-hidden {
-  display: none;
-}
+/* Small mono text on cards: stat labels and footers */
+.card-stats, .card-foot { color: var(--muted); }
 
 /* Let card tag labels wrap inside the card so a long label never pushes
    the corner arrow out of the (overflow-hidden) card and clips it. */
 .case-card .chip { white-space: normal; line-height: 1.3; }
-
-/* Filter tabs */
-.tab {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
-  padding: 8px 16px;
-  border-radius: 99px;
-  border: 1px solid var(--line-soft);
-  color: var(--muted);
-  background: transparent;
-  transition: all 0.25s ease;
-}
-.tab:hover { color: var(--text); border-color: var(--line); }
-.tab.active {
-  color: #0B0E11;
-  background: var(--lime);
-  border-color: var(--lime);
-  box-shadow: 0 0 24px -6px var(--lime-glow);
-}
 
 /* =========================================================================
    Modal (case detail)
@@ -477,8 +452,9 @@ body {
   display: flex;
   gap: 2.5rem;
   width: max-content;
-  animation: marquee 30s linear infinite;
 }
+/* main.js clones the list and adds .is-looping; a single copy stays still */
+.marquee-track.is-looping { animation: marquee 36s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
@@ -489,7 +465,7 @@ body {
 }
 
 /* =========================================================================
-   "Off the clock" nature gallery (CSS columns masonry)
+   "Off the clock" nature gallery (two flex rows)
    ========================================================================= */
 .nature-tile {
   position: relative;
@@ -497,7 +473,8 @@ body {
   overflow: hidden;
   border-radius: 14px;
   border: 1px solid var(--line-soft);
-  break-inside: avoid;
+  margin: 0;
+  min-width: 0;
   background: var(--surface);
 }
 .nature-tile img {
@@ -512,7 +489,7 @@ body {
   left: 0; right: 0; bottom: 0;
   padding: 30px 14px 12px;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
   color: #fff;
   display: flex;
